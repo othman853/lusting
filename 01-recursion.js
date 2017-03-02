@@ -1,15 +1,20 @@
 const aDecimal = 56;
 const aBinary = '111000';
 
-const binary = n => {
+const spit =
+  bin => console.log(`${aDecimal} should become ${aBinary}. It became ${bin(aDecimal)}`);
 
-  const bit = n => (n % 2 | 0);
-  const next = n => n / 2;
-  const bin = (binValue = '', bit = '') => bit + binValue;
+const binary = (() => {
 
-  const sweep = (n, b) => (n < 1) ? b : sweep(next(n), bin(b, bit(n)));
+  const
+    bit = n => n % 2 | 0,
+    next = n => n / 2,
+    bin = (binValue = '', aBit = '') => aBit + binValue,
 
-  return sweep(n);
-};
+    sweep = (decimal, binary) =>
+      (decimal < 1) ? binary : sweep(next(decimal), bin(binary, bit(decimal)));
 
-console.log(`${aDecimal} should become ${aBinary}. It is actually ${binary(aDecimal)}`);
+  return sweep;
+})();
+
+spit(binary);
