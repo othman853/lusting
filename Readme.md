@@ -1,33 +1,19 @@
-# LUSTing
+# LUSTIng
 
-Things I am `(Learn|Understand|Study|Test)ing`.
+At first, I was just putting here some random stuff I was digging around the internet regarding programming, technology, concepts, etc. After a while, I realised that this would certainly be a mess when things started to grow big. I was just going to store plenty of code and text into a repository and eventually end up forgetting about it. The thing is that I really intend to learn new things and progress, but, unfortunately, in this crazy internet-driven world, a programmer simply can't just do that without making choices about what they want to learn. Time is a scarce resource and the amount of available content out there is huge.
 
-## Activities
+After thinking about this a little, It came to me that what I really need is a system that can allow me to collect, categorize and prioritise all the stuff I absorb from the interwebs. This way will be easier to understand what I really want to do with my programming life by discovering what's most important and allocating the right time on what really matters to me.
 
-What I've been up to so far:
+_**This is not just a book, it is a git versioned book. It is like a diary, it's endless.**_
 
-|ID | Type       | What        |  Language/Tool |
-|---|------------|-------------|----------------|
-|01 | Learn      | Recursion   | JavaScript     |
-|02 | Study      | Closures    | JavaScript     |
-|03 | Understand | YCombinator | JavaScript     |
+## Where to start from
 
-## Links
+I am trying to start by :
 
- [YCombinator explained](http://kestas.kuliukas.com/YCombinatorExplained/)
+* Understanding what are my information sources
+* What is the kind of information I receive from these sources
+* How they influence me? What values can they bring me? 
+* How should I act in order to make the best use of the information that is available to me?
 
-## Dear diary, today I...
 
-__Found out that YCombinator is also a pattern, not just the name of a company__
 
-As I was trying to find a more elegant way to solve `01-recursion` using closures, I realized I was trying to do a closure with a `recursive annonymous arrow function` (which led me to [here](http://stackoverflow.com/questions/25228394/how-do-i-write-an-arrow-function-in-es6-recursively)):
-```js
-const binary = n => {
-  const bit = n => (n % 2 | 0);
-  const next = n => n / 2;
-  const bin = (binValue = '', bit = '') => binValue + bit;
-  // What the hell was I thinking?
-  return ((n, b) => (n < 1) ? b : WTF_DO_I_CALL_HERE(next(n), bin(b, bit(n))))(n);
-};
-```
-This is a problem that can apparently be solved by applying __YCombinator__.
