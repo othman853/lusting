@@ -1,5 +1,3 @@
-const letters = ['a', 'b', 'c', 'd', 'e', 'f'];
-
 const each = array => callback => {
 
   const next = (current = 0) => {
@@ -11,7 +9,6 @@ const each = array => callback => {
 
   return next();
 };
-
 const map = array => mapper => {
 
   const next = (current = 0, mapped = []) => {
@@ -21,12 +18,10 @@ const map = array => mapper => {
     }
 
     return mapped;
-
   };
 
   return next();
 };
-
 const filter = array => criteria => {
 
   const get = i => array[i];
@@ -48,29 +43,30 @@ const filter = array => criteria => {
   return next();
 
 };
+const pipeline =
+  data =>
+    (action, cb) =>
+      (!action && !cb) ? data : pipeline(action(data)(cb));
+const from = data => pipeline(data);
 
-const pipeline = data => (action, cb) => pipeline(action(data, cb));
+const not = criteria => subject => !criteria(subject);
+const eq = criteria => subject => subject === criteria;
+const included = (...criteria) => subject => criteria.includes(subject);
+const gt = criteria => subject => subject > criteria;
+const gte = criteria => subject => subject >= criteria;
+const uppercase = Function.prototype.call.bind(String.prototype.toUpperCase);
 
-const on = data => {
-  console.log('on => ' + data);
-  pipeline(data);
-};
+const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
 
+const vowelsOnly = from(letters) (filter, included('a', 'e', 'i', 'o', 'u'));
 
-on(letters)
-  (m, l => l + 'a')
-  (f, l => l !== 'b')
-  ();
-
-letters
-  .map(l => l + 'a')
-  .filter(l => l !== 'b')
+const consonantsOnly =
+  from(letters) (filter, not(included('a', 'e', 'i', 'o', 'u'))) (map, uppercase);
 
 
-map(letters)(l => l)(map, l => )
+const a =
+  () =>
+    (b = (v=0) => v <= 3 ? (console.log(v), b(v + 1)) : undefined );
 
-each(letters)(console.log);
 
-filter(letters, l => l === 'a')
-
-each(map(filter(letters)(l => l === 'a'))(l => l + l ))(console.log);
+a()();
