@@ -1,5 +1,7 @@
 # Summary
 
 * [Introduction](Readme.md)
-* [Discovery list](discover.md)
+* [Discovering](discover.md)
+* [Journal](dear-diary-today-i.md)
+* [Understanding](understanding.md)
 
