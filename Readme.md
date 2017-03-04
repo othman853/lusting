@@ -6,33 +6,23 @@ After thinking about this a little, It came to me that what I really need is a s
 
 _**This is not just a book, it is a git versioned book. It is like a diary, it's endless.**_
 
-## Where to start from
+## Starting with questions
 
-I am trying to start by :
-
-* Understanding what are my information sources
-* What is the kind of information I receive from these sources
+* What are my information sources?
+* What is the kind of information I receive from these sources?
+* What is the information that I pursue? Why do I do so?
 * How they influence me? What values can they bring me? 
 * How should I act in order to make the best use of the information that is available to me?
+* What are my goals? Why do I want to achieve them?
+* How should I prioritize things? What should I consider as important?
 
+**O que acontece com as informações ativas:**
 
+* Descoberta &gt; entender &gt; estudar\|testar\|implementar &gt; gerar evidências &gt; aprender
 
-O que geralmente acontece com as informações ativas:
+**O que acontece com informações passivas:**
 
-Descoberta &gt; entender &gt; estudar\|testar\|implementar &gt; gerar evidências &gt; aprender
-
-  
-O que acontece com informações passivas:
-
-necessidade &gt; pesquisar &gt; saber o mínimo para seguir &gt; resolver problema &gt; renecessidade eventual
-
-
-
-Informações ativas e passivas
-
-Entender quais são meus objetivos
-
-Escolher poucos objetivos
+* necessidade &gt; pesquisar &gt; saber o mínimo para seguir &gt; resolver problema &gt; renecessidade eventual
 
 Priorizar por necessidade, vontade, valor gerado, tempo necessário, complexidade. Elaborar plano cartesiano como aquele usado em tech debts
 
