@@ -17,3 +17,34 @@ I am trying to start by :
 
 
 
+O que geralmente acontece com as informações ativas:
+
+Descoberta &gt; entender &gt; estudar\|testar\|implementar &gt; gerar evidências &gt; aprender
+
+  
+O que acontece com informações passivas:
+
+necessidade &gt; pesquisar &gt; saber o mínimo para seguir &gt; resolver problema &gt; renecessidade eventual
+
+
+
+Informações ativas e passivas
+
+Entender quais são meus objetivos
+
+Escolher poucos objetivos
+
+Priorizar por necessidade, vontade, valor gerado, tempo necessário, complexidade. Elaborar plano cartesiano como aquele usado em tech debts
+
+Escrever um diário
+
+Isso pode ser visto como algo pessoal, organizacional e/ou documental
+
+Micro gerência de informações
+
+* Gerenciadores de senhas
+* Gerenciadores de links
+* Uma forma concisa de manter informações esparsas organizadas 
+
+
+
